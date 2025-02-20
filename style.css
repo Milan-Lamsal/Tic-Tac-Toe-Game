@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding:0; 
+    /*  not necessary but good practice to do it */
+}
+body{
+    /* coolers for colors pallets */
+    background-color:#A0DDE6 ;
+    text-align: center;
+}
+.container{
+    height: 70vh;  /* 70% of viewpot height , 70% part will be our container  */
+    display: flex;  /* all boxes in same order  */
+    justify-content: center; /*  to bring in center*/
+    align-items: center; /*  to bring in center*/
+   
+
+}
+.game{
+    height: 60vmin; /* 60% of the smaller viewport dimension  */
+    width: 60vmin; /* 60% of the smaller viewport dimension  */
+    display: flex;  /* all boxes in same order  */
+    flex-wrap: wrap;  /* next line if there is no line   */
+    justify-content: center; /*  to bring in center*/
+    align-items: center; /*  to bring in center*/
+    gap:1.5vmin; /*to bring the gap between boxes*/
+   
+    
+} 
+.box{
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;/* make it like a curve on the border   */
+    border: none;/*removing the border*/ 
+    box-shadow: 0 0 1rem rgba(0,0 ,0, 0.3); /* giving shadow */
+    font-size: 8vmin;/*  For X and O */
+    color:#b33c86;
+    background-color: #BEE5BF;
+}
+#resetButton{
+    padding:1rem;
+    font-size:1.25rem;
+    background-color: #03012c;
+    color:white;
+    border-radius: 1.5rem;
+    border: none;
+}
+#new-button{
+    padding:1rem;
+    font-size:1.25rem;
+    background-color: #03012c;
+    color:white;
+    border-radius: 1rem;
+    border: none;
+
+}
+#msg{
+    color:black;
+    font-size:5vmin;
+
+}
+.msg-container{
+    height: 100vmin;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    gap: 4rem;
+}
+.hide{ 
+    display: none;
+}
